@@ -3,17 +3,17 @@
 require_once 'post.php';
 
 
-$tech = new CATEGORIA('Tecnologia');
-$life = new CATEGORIA('Lifestyle');
+$tech = new Categoria('Tecnologia');
+$life = new Categoria('Lifestyle');
 
 
-$post1 = new POST(
+$post1 = new Post(
     'Introduzione a PHP',
     $tech,
     ['php', 'backend', 'programmazione']
 );
 
-$post2 = new POST(
+$post2 = new Post(
     'Vivere meglio con nemo',
     $life,
     ['benessere', 'minimalismo']
@@ -22,3 +22,4 @@ $post2 = new POST(
 
 $post1->mostraArticolo();
 $post2->mostraArticolo();
+

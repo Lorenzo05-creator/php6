@@ -2,12 +2,12 @@
 
 require_once 'categoria.php';
 
-class POST {
+class Post {
     public string $titolo;
-    public CATEGORIA $categoria;
+    public Categoria $categoria;
     public array $tag;
 
-    public function __construct(string $titolo, CATEGORIA $categoria, array $tag = []) {
+    public function __construct(string $titolo, Categoria $categoria, array $tag = []) {
         $this->titolo = $titolo;
         $this->categoria = $categoria;
         $this->tag = $tag;
@@ -20,3 +20,4 @@ class POST {
         echo "--------------------------\n";
     }
 }
+
